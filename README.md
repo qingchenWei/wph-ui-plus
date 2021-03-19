@@ -1,24 +1,13 @@
-# wph-ui
 
-## Project setup
-```
-npm install
-```
+- 本项目用于个人ui组件库的开发练习
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- 使用组件库
+    npm install wph-ui
 
-### Lints and fixes files
-```
-npm run lint
-```
+- 全局导入,在main中添加：
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+    import wphUi form 'wph-ui'
+    import 'wphUi/lib/wph-ui.css'
+
+    Vue.use(wphUi)
