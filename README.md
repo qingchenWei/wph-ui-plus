@@ -8,6 +8,7 @@
 - 全局导入,在main中添加：
 
     import wphUi form 'wph-ui'
+    
     import 'wphUi/lib/wph-ui.css'
 
     Vue.use(wphUi)

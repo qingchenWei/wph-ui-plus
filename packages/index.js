@@ -1,8 +1,8 @@
 // 整个包的入口
 // 统一导出
 // 导出颜色选择器组件
-import Button from './button'
-import Dialog from './dialog'
+import Button from './button.vue'
+import Dialog from './dialog.vue'
 import './iconfont/iconfont.css'
 
 const components = [
