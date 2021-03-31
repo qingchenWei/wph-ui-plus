@@ -49,8 +49,8 @@ const Message = {
   },
 
   // 警告提示
-  wraning: (title) => {
-    handleData("wraning", title);
+  warning: (title) => {
+    handleData("warning", title);
   },
 
   // 成功提示
@@ -59,8 +59,8 @@ const Message = {
   },
 
   // 错误提示
-  error: (title) => {
-    handleData("error", title);
+  danger: (title) => {
+    handleData("danger", title);
   },
 };
 
