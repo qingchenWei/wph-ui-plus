@@ -76,7 +76,7 @@
           <wph-button @click="showDialog = false" plain type="info"
             >取消</wph-button
           >
-          <wph-button plain type="primary">确认</wph-button>
+          <wph-button plain @click="showmessage" type="primary">确认</wph-button>
         </template>
       </wph-dialog>
     </div>
@@ -84,17 +84,22 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, getCurrentInstance} from "vue";
 export default {
   name: "App",
   setup() {
+    let { proxy } = getCurrentInstance();
     const showDialog = ref(false);
     const dislogChange = () => {
       showDialog.value = true;
     };
+    const showmessage = () => {
+      proxy.Message.success()
+    }
     return {
       dislogChange,
       showDialog,
+      showmessage
     };
   },
 };
