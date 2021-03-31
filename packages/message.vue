@@ -2,7 +2,7 @@
  * @Author: 卫鹏辉 
  * @Date: 2021-03-26 10:38:11 
  * @Last Modified by: 卫鹏辉
- * @Last Modified time: 2021-03-31 13:19:35
+ * @Last Modified time: 2021-03-31 15:23:15
  */
 <template>
   <div>
@@ -32,7 +32,6 @@ export default {
   setup(props) {
     const show  = ref(true);
     const { title , type } = toRefs(props);
-    console.log(props)
     let title1 = title.value;
     let type1 = type.value;
     onMounted(()=>{
